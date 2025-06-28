@@ -1,0 +1,55 @@
+<!-- File: index.html
+GUI Assignment 4 - Part 1: Using jQuery Plugin?UI with Dynamic Table
+Anh Nguyen, UMass Lowell Computer Science, anh_nguyen9@student.uml.edu
+Copyright (c) 2025 by Anh Nguyen. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AN on June 27, 2021 at 12:15 PM
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multiplication Table Generator</h1>
+        <img src="images/beautiful-landscape-painting_23-2151894731.jpg" alt="">
+        <form id="tableGrid">
+            <label for="startingR">Starting Value of Row:</label>
+            <input type="text" id="startingR" name="startingR" required>
+            <div id="sliderStartingR" class="slider"></div>
+            
+            <label for="endingR">Ending Value of Row:</label>
+            <input type="text" id="endingR" name="endingR" required>
+            <div id="sliderEndingR" class="slider"></div>
+            
+            <label for="startingC">Starting Value of Column:</label>
+            <input type="text" id="startingC" name="startingC" required>
+            <div id="sliderStartingC" class="slider"></div>
+            
+            <label for="endingC">Ending Value of Column:</label>
+            <input type="text" id="endingC" name="endingC" required>
+            <div id="sliderEndingC" class="slider"></div>
+            
+            <button type="submit">Generate Table</button>
+        </form>
+        <div id="error"></div>
+        <div id="tableContainer">
+            <table id="multiplicationTable"></table>
+        </div>
+        <div id="tableTabs">
+            <ul></ul>
+        </div>
+        <button id="deleteTabsButton">Delete Selected Tabs</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
